@@ -1,6 +1,6 @@
-@import "config";
-@import "menu";
-@import url("https://fonts.googleapis.com/css?family=Arsenal&display=swap");
+@import 'config';
+@import 'menu';
+@import url('https://fonts.googleapis.com/css?family=Arsenal&display=swap');
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -14,7 +14,7 @@
       background-size: cover;
 
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         right: 0;
@@ -37,7 +37,7 @@ body {
   color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Arsenal", sans-serif;
+  font-family: 'Arsenal', sans-serif;
   line-height: 1.5;
 }
 
@@ -107,8 +107,8 @@ main {
   display: grid;
   grid-gap: 3rem;
   grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
+    'bioimage bio bio'
+    'job1 job2 job3';
   grid-template-columns: repeat(3 1fr);
 
   h6 {
@@ -158,6 +158,14 @@ main {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+
+  p {
+    background-color: darken($primary-color, 50);
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0;
+  }
 
   img {
     width: 100%;
@@ -236,4 +244,4 @@ main {
   height: 60px;
 }
 
-@import "mobile";
+@import 'mobile';

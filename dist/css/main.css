@@ -100,14 +100,14 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: "Arsenal", sans-serif;
+  font-family: 'Arsenal', sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(/dist/img/background2.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img:after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       right: 0;
@@ -163,7 +163,7 @@ main {
 .about-info {
   display: grid;
   grid-gap: 3rem;
-  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3 1fr); }
   .about-info h6 {
     font-size: 1rem;
@@ -197,6 +197,12 @@ main {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); }
+  .projects p {
+    background-color: black;
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0; }
   .projects img {
     width: 100%;
     border: 3px solid #fff; }
@@ -282,6 +288,8 @@ main {
     font-size: 4rem; } }
 
 @media screen and (max-width: 500px) {
+  .menu-nav {
+    height: 65vh; }
   .menu-branding {
     height: 35vh; }
   main#home h1 {
@@ -298,9 +306,9 @@ main {
   .boxes div {
     font-size: 1.5rem;
     padding: 1rem 2rem; }
+    .boxes div:hover {
+      padding: 1rem 2rem; }
   .boxes span {
     font-size: 1.5rem; }
-  .boxes:hover {
-    padding: 1.5rem 2.5rem; }
   span {
     font-size: 2.5rem; } }
