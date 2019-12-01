@@ -160,12 +160,14 @@ main {
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
 
-  p {
-    background-color: darken($primary-color, 50);
-    color: #fff;
-    font-size: 1.1rem;
-    text-align: center;
-    margin: 0;
+  i {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: auto;
+
+    &::before {
+      margin-right: 5px;
+    }
   }
 
   img {
@@ -217,6 +219,7 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
+  text-align: center;
 
   &:hover {
     background: $secondary-color;

@@ -196,12 +196,12 @@ main {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); }
-  .projects p {
-    background-color: black;
-    color: #fff;
-    font-size: 1.1rem;
-    text-align: center;
-    margin: 0; }
+  .projects i {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: auto; }
+    .projects i::before {
+      margin-right: 5px; }
   .projects img {
     width: 100%;
     border: 3px solid #fff; }
@@ -235,7 +235,8 @@ main {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  text-align: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #3472f8;
     color: #fff;
