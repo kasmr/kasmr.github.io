@@ -100,12 +100,11 @@
 .menu-branding .portrait {
   width: 250px;
   height: 250px;
-  background: url("/dist/img/portrait.jpg");
+  background: url("/dist/img/portrait.jpg") no-repeat;
   border-radius: 50%;
   border: solid 3px #3472f8;
+  background-position: top;
   background-size: cover;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
 }
 
 .menu .nav-item {
@@ -274,8 +273,6 @@ main#home h1 {
 .about-info img {
   width: 250px;
   height: 250px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -474,8 +471,8 @@ main#home h1 {
             transform: translate3d(100%, 0, 0);
   }
   .menu-branding .portrait {
-    -webkit-transform: rotate(-90deg) scale(0.7);
-            transform: rotate(-90deg) scale(0.7);
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
   }
   .about-info {
     display: block;

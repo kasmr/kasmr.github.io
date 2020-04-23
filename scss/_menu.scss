@@ -1,4 +1,4 @@
-@import "config";
+@import 'config';
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
@@ -92,11 +92,11 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url("/dist/img/portrait.jpg");
+      background: url('/dist/img/portrait.jpg') no-repeat;
       border-radius: 50%;
       border: solid 3px $secondary-color;
+      background-position: top;
       background-size: cover;
-      transform: rotate(270deg);
     }
   }
 
