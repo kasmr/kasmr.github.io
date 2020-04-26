@@ -356,7 +356,7 @@ main#home h1 {
 
 .projects img {
   width: 100%;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
 }
 
 .projects img:hover {
@@ -386,22 +386,24 @@ main#home h1 {
 }
 
 .boxes div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-size: 2rem;
   border: 3px #fff solid;
   padding: 1.5rem 2.5rem;
   margin-bottom: 3rem;
+  width: 500px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
 .boxes div:hover {
-  background: #3472f8;
-  color: #fff;
-  padding: 2rem 3rem;
-}
-
-.boxes div:hover span {
-  color: #000;
+  border: 3px #3472f8 solid;
+  cursor: pointer;
 }
 
 .btn, .btn-dark, .btn-light {
@@ -413,28 +415,21 @@ main#home h1 {
 }
 
 .btn:hover, .btn-dark:hover, .btn-light:hover {
-  background: #3472f8;
-  color: #fff;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  border: 2px #3472f8 solid;
 }
 
 .btn-dark {
   background: black;
   color: #fff;
+  border: 2px solid white;
 }
 
 .btn-light {
   background: #c4c4c4;
   color: #333;
-}
-
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #2b2b2b;
-  color: #fff;
-  height: 60px;
+  border: 2px solid white;
 }
 
 @media screen and (max-width: 768px) {
