@@ -178,6 +178,7 @@ body#bg-img {
   background: url(/dist/img/background2.jpg);
   background-attachment: fixed;
   background-size: cover;
+  background-position: bottom;
 }
 
 body#bg-img:after {
@@ -228,8 +229,8 @@ header {
 }
 
 main {
-  padding: 4rem;
-  min-height: calc(100vh - 60px);
+  padding: 1rem 4rem;
+  min-height: 100%;
 }
 
 main .icons {
@@ -315,8 +316,9 @@ main#home h1 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 1rem auto;
 }
 
@@ -475,6 +477,10 @@ main#home h1 {
   .about-info {
     padding: 0;
   }
+  .about-info img {
+    width: 200px;
+    height: 200px;
+  }
   main#about h1 {
     font-size: 2.5rem;
   }
@@ -490,6 +496,9 @@ main#home h1 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .job.job-1 ul li {
+    margin: 0.5rem;
   }
   .job.job-1 h3 {
     margin: 0;
