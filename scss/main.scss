@@ -105,12 +105,10 @@ main {
 //About section
 
 .about-info {
-  display: grid;
-  grid-gap: 3rem;
-  grid-template-areas:
-    'bioimage bio bio'
-    'job1 job1 job1';
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0 5rem;
 
   h6 {
     font-size: 1rem;
@@ -123,9 +121,9 @@ main {
     object-fit: cover;
   }
 
-  #redux {
-    width: 40px;
-    height: 40px;
+  #icon {
+    width: 30px;
+    height: 30px;
     margin: auto;
   }
 
@@ -149,6 +147,9 @@ main {
       font-size: 2rem;
     }
     ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
       margin: 1rem auto;
       li {
         display: flex;
@@ -158,12 +159,6 @@ main {
       }
     }
   }
-  // .job-2 {
-  //   grid-area: job2;
-  // }
-  // .job-3 {
-  //   grid-area: job3;
-  // }
 
   .job {
     background: lighten($primary-color, 5);
